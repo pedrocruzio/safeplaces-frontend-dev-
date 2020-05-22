@@ -24,7 +24,7 @@ function App() {
           <Route path="/:patient?/:page?/:action?" component={PathEditor} />
 
 
-          <Route path="/admin/settings/:action?" component={AdminSettings} />
+          <Route path="/admin/settings" component={AdminSettings} />
 
         </Switch>
       </ConnectedRouter>
