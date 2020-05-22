@@ -1,4 +1,5 @@
 # Safeplaces frontend
+*Safeplaces is a tool designed for individuals, public health officials, and larger communities to flatten the COVID-19 curve, reduce fear, and prevent a surveillance state response to the pandemic.*
 
 The application is a offline-first PWA. All the functionality should be available without having an API so no data is getting shared until you push to an API.
 
