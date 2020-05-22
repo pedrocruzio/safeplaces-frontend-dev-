@@ -27,9 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Install
 
-clone the repository using the `dev_react` branch
-
-Copy the `.env.template` file in the parent directory and rename it to `.env` file in the parent directory. In order to make the application work correctly you have to enter API keys for Mapbox and Google places. If you don't want to register new ones feel free to ask for working credentials in the Slack channel.
+Create a new file called .env` file in the parent directory. In order to make the application work correctly you have to enter API keys for Mapbox and Google places.
 
 ```
 REACT_APP_GOOGLE_PLACES_KEY=GOOGLE_API_KEY_WITH_PLACES_ENABLED
