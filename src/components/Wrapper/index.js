@@ -4,7 +4,6 @@ import { useParams, useHistory } from 'react-router';
 import cases, { getCasesArray, showCurrentCase } from 'ducks/cases';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Button } from '@wfp/ui';
 import { v4 } from 'uuid';
 import { getCurrentPath } from 'selectors';
 
@@ -37,7 +36,7 @@ export default function Wrapper({ children, editor, sidebar }) {
     <div
       className={`${styles.wrapper} ${
         params.page === 'edit' ? styles.wrapperEdit : ''
-      }`}
+        }`}
     >
       <div className={styles.sidebar}>{sidebar}</div>
       <div className={styles.editor}>{editor}</div>

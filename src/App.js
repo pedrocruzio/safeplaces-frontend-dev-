@@ -9,23 +9,37 @@ import Calendar from './components/Calendar';
 import Settings from './components/Settings';
 import Login from './components/Login';
 
-import AdminSettings from './components/admin/Settings/index';
 
 import { history } from './store';
+
+import {
+  MainNavigation,
+  MainNavigationItem
+} from '@wfp/ui';
 
 function App() {
   return (
     <div className="App">
+      <MainNavigation
+        logo="COVID Safe Places"
+      >
+        <MainNavigationItem>
+          Contact Trace
+        </MainNavigationItem>
+        <MainNavigationItem>
+          Publish Data
+        </MainNavigationItem>
+        <MainNavigationItem>
+          Settings
+        </MainNavigationItem>
+      </MainNavigation>
+
       <ConnectedRouter history={history}>
         <Switch>
           <Route path="/login/:action?" component={Login} />
           <Route path="/settings/:action?" component={Settings} />
           <Route path="/:patient?/calendar/:action?" component={Calendar} />
           <Route path="/:patient?/:page?/:action?" component={PathEditor} />
-
-
-          <Route path="/admin/settings" component={AdminSettings} />
-
         </Switch>
       </ConnectedRouter>
     </div>
